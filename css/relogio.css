@@ -1,0 +1,24 @@
+@font-face {
+    font-family: 'digital-7';
+    src: url('../font/digital-7.ttf');
+}
+
+.clockD {
+    font-family: "Roboto";
+    display: flex;
+    position: fixed;
+    width: calc(100%);
+    max-width: 99px;
+    top: 10px;
+    right: 0;
+    background-color: transparent;
+    z-index: 1;
+}
+
+.clockD h4 {
+    color: #4deff5;
+    font-size: 25px;
+    font-weight: 300;
+    font-family: 'digital-7';
+    font-size: 30px;
+}

@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portifólio</title>
+    <link rel="shortcut icon" href="img/logo.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="css/bio.css" />
+    <link rel="stylesheet" href="css/relogio.css" />
+    <link rel="stylesheet" href="css/cards.css" />
+    <link rel="stylesheet" href="css/footer.css" />
+    <link rel="stylesheet" href="css/criptex.css" />
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+  </head>
+
+  <body>
+
+    <div id="clock">
+      <div class="clockD">
+        <h4></h4>
+      </div>
+    </div>
+
+    <div id="perfil">
+      <div class="glass">
+        <img src="img/perfil.jpg" alt="Foto de perfil" />
+        <div class="bio">
+          <h2>Luiz Felipe</h2>
+          <p>
+            <br>Estudante formado em Análise e Desenvolvimento de Sistemas,
+            <br>apaixonado por tecnologia e desenvolvimento web/mobile.
+            <br>Meus conhecimentos incluem HTML 5, CSS, JavaScript, Java, C, C++,
+            <br>e também tenho experiência em Automação com Arduíno.
+            <br>Sem experiência profissional, mas sempre buscando me atualizar
+            <br>e aprimorar minhas habilidades para atuar na área em que sou apaixonado.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="box">
+        <a
+          href="https://github.com/stars/Nerd-Programador/lists/arduino"
+          target="_blank"
+          rel="noopener"
+        >
+          <img src="img/arduino.png" alt="Arduino" />
+          <div class="text">
+            <h2>Arduino</h2>
+            <p>Projetos de automação e IoT com Arduino e NodeMCU em C/C++.</p>
+          </div>
+        </a>
+      </div>
+
+      <div class="box">
+        <a
+          href="https://github.com/stars/Nerd-Programador/lists/web"
+          target="_blank"
+          rel="noopener"
+        >
+          <img src="img/web.png" alt="Web" />
+          <div class="text">
+            <h2>Web</h2>
+            <p>Elementos web em HTML, CSS e JavaScript.</p>
+          </div>
+        </a>
+      </div>
+
+      <div class="box">
+        <a
+          href="https://github.com/stars/Nerd-Programador/lists/android-studio"
+          target="_blank"
+          rel="noopener"
+        >
+          <img src="img/android.png" alt="Android" />
+          <div class="text">
+            <h2>Android</h2>
+            <p>Projetos desenvolvidos no Android Studio com Java.</p>
+          </div>
+        </a>
+      </div>
+    </div>
+
+    <div class="decoder">
+      <h1 class="titulo">Código Secreto</h1>
+      <section class="form secret">
+        <form>
+          <h2 for="input-texto">Mensagem para Criptografar</h2>
+          <textarea class="text-input" name="input-texto" id="input-texto" placeholder="insira o texto aqui"></textarea>
+          <button class="btn" type="button" onclick="codificar()" id="btn-cripto"> Criptografar! </button>
+          <button class="btn" type="button" onclick="decodificar()" id="btn-descripto"> Descriptografar! </button>
+        </form>
+      </section>
+
+      <section class="msg secret">
+        <h2 id="msg-crip">Mensagem Criptografada</h2>
+        <textarea class="text-input" id="output"></textarea>
+        <button class="btn" type="button" onclick="copiarTexto()" id="btn-copy"> Copiar </button>
+        <button class="btn" type="button" onclick="limparTexto()" id="btn-limpar"> Limpar </button>
+      </section>
+    </div>
+
+
+    <footer>
+      <div class="ondas">
+        <div class="onda" id="onda1"></div>
+        <div class="onda" id="onda2"></div>
+        <div class="onda" id="onda3"></div>
+        <div class="onda" id="onda4"></div>
+      </div>
+      <ul class="social_icon">
+        <li><a href="https://github.com/Nerd-Programador"><ion-icon name="logo-github"></ion-icon></a></li>
+        <li><a href="https://www.tiktok.com/@nerd.da.cadeira"><ion-icon name="logo-tiktok"></ion-icon></a></li>
+        <li><a href="https://wa.me/5511996545553"><ion-icon name="logo-whatsapp"></ion-icon></a></li>
+        <li><a href="https://www.linkedin.com/in/luiz-felipe-b6a4211b3/"><ion-icon name="logo-linkedin"></ion-icon></a></li>
+        <li><a href="https://www.facebook.com/LFAS.4/"><ion-icon name="logo-facebook"></ion-icon></a></li>
+      </ul>
+
+      <p>&copy; 2023 Nerd Programador</p>
+
+      <!-------------------------------------------------------------------------------------
+          | Este código foi baseado em um projeto de Mohamed Algendy.                           |
+          | Foram realizadas modificações para atender às necessidades do meu próprio projeto.  |
+          | Créditos originais:                                                                 |
+          | Footer com ondas animadas: https://codepen.io/mo_ala/pen/NWbjvNq                    |
+          | Autor: Mohamed Algendy                                                              |
+          | Ano: 2021                                                                           |
+          | ©2021 Mohamed Algendy | Todos os direitos reservados                                |
+          -------------------------------------------------------------------------------------->
+    </footer>
+
+    <script src="script/relogio.js"></script>
+    <script src="script/criptex.js"></script>
+  </body>
+</html>

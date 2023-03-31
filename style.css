@@ -1,0 +1,16 @@
+body{
+    background-color: #111;
+    position: relative;
+    overflow: auto;
+}
+
+::-webkit-scrollbar {
+    background-color: #3E3E3E;
+    border-radius: 10px;
+    width: 3px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #A2A7BA;
+    border-radius: 10px;
+}
